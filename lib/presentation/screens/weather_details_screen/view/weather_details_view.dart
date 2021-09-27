@@ -4,7 +4,6 @@ import 'package:k_weather_app/presentation/components/spinner/spinner.dart';
 import 'package:k_weather_app/presentation/screens/weather_details_screen/view_model/weather_details_viewmodel.dart';
 import 'package:k_weather_app/presentation/utils/helper.dart';
 import 'package:provider/provider.dart';
-
 import 'local_widgets/body.dart';
 
 class WeatherDetailsView extends StatelessWidget {
@@ -14,10 +13,9 @@ class WeatherDetailsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black87,
-      appBar: new AppBar(
+      appBar: AppBar(
         toolbarHeight: 0,
         backgroundColor: Colors.black87,
-        brightness: Brightness.dark,
       ),
       body: Consumer<WeatherDetailsViewModel>(builder: (context, viewmodel, child) {
         switch (viewmodel.currentState) {

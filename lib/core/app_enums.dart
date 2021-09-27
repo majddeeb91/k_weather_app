@@ -4,3 +4,9 @@ enum ProviderState {
   loaded,
   error,
 }
+
+enum AppEnvironment {
+  staging,
+
+  production,
+}

@@ -3,14 +3,14 @@ import 'package:k_weather_app/domain/entities/weather_details_entities/current_d
 import 'package:k_weather_app/presentation/utils/helper.dart';
 
 class Header extends StatelessWidget {
+  final String cityName;
+
+  final CurrnetDayWeather currentDayWeather;
   const Header({
     Key? key,
     required this.currentDayWeather,
     required this.cityName,
   }) : super(key: key);
-
-  final String cityName;
-  final CurrnetDayWeather currentDayWeather;
 
   @override
   Widget build(BuildContext context) {

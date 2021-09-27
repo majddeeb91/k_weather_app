@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [ChangeNotifierProvider<WeatherDetailsViewModel>(create: (context) => WeatherDetailsViewModel())],
       child: MaterialApp(
+        themeMode: ThemeMode.dark,
         debugShowCheckedModeBanner: false,
         home: WeatherDetailsView(),
       ),

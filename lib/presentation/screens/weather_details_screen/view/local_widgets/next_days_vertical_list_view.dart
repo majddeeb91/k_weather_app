@@ -6,10 +6,12 @@ import 'package:k_weather_app/presentation/utils/helper.dart';
 
 class NexgDaysVerticalListView extends StatelessWidget {
   final List<DailyData> dailyDataList;
+
   const NexgDaysVerticalListView({
     Key? key,
     required this.dailyDataList,
   }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Expanded(

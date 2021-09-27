@@ -4,6 +4,7 @@ import 'package:k_weather_app/presentation/screens/shared_widgets/weather_condit
 
 class WeatherConditions extends StatelessWidget {
   final CurrnetDayWeather currentDaywWeather;
+
   const WeatherConditions({Key? key, required this.currentDaywWeather}) : super(key: key);
 
   @override

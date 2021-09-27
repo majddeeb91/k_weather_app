@@ -1,10 +1,11 @@
+import 'package:k_weather_app/core/app_enums.dart';
+
 class AppConfiguration {
   // variables
   AppEnvironment appEnvironment = AppEnvironment.production;
   String appHost = "";
   String appScheme = "";
   String apiKey = "";
-
   static final AppConfiguration sharedInstance = AppConfiguration._();
 
   // private constructor
@@ -28,10 +29,4 @@ class AppConfiguration {
       default:
     }
   }
-}
-
-enum AppEnvironment {
-  staging,
-
-  production,
 }

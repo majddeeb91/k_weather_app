@@ -10,6 +10,7 @@ import 'next_days_vertical_list_view.dart';
 
 class Body extends StatelessWidget {
   final WeatherDetailsViewModel viewModel;
+
   const Body({Key? key, required this.viewModel}) : super(key: key);
 
   @override

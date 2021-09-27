@@ -28,6 +28,6 @@ class Helper {
   }
 
   static getWeatherIconUrlFromIconCode({required String code, bool largeSize = false}) {
-    return largeSize ? "https://openweathermap.org/img/wn/${code}@2x.png" : "https://openweathermap.org/img/wn/${code}.png";
+    return largeSize ? "https://openweathermap.org/img/wn/$code@2x.png" : "https://openweathermap.org/img/wn/$code.png";
   }
 }

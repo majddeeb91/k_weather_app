@@ -4,6 +4,7 @@ class WeatherConditionItem extends StatelessWidget {
   final String title;
   final String value;
   final Color valueColor;
+
   const WeatherConditionItem({
     Key? key,
     required this.title,

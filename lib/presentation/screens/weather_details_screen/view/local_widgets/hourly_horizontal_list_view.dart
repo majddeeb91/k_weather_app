@@ -4,10 +4,12 @@ import 'package:k_weather_app/presentation/utils/helper.dart';
 
 class HourlyHorizontalListView extends StatelessWidget {
   final List<HourlyData> hourlyDataList;
+
   const HourlyHorizontalListView({
     Key? key,
     required this.hourlyDataList,
   }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(

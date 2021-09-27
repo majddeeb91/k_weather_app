@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:k_weather_app/domain/entities/weather_details_entities/daily_data_entity.dart';
 import 'package:k_weather_app/presentation/utils/helper.dart';
-
 import 'next_day_weather_conditions.dart';
 
 class Body extends StatelessWidget {
+  final DailyData currentNextDayDetails;
+
   const Body({
     Key? key,
     required this.currentNextDayDetails,
   }) : super(key: key);
-
-  final DailyData currentNextDayDetails;
 
   @override
   Widget build(BuildContext context) {

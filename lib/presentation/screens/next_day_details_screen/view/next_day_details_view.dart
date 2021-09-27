@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:k_weather_app/domain/entities/weather_details_entities/daily_data_entity.dart';
 import 'package:k_weather_app/presentation/screens/next_day_details_screen/view_model/next_day_details_viewmodel.dart';
-
 import 'local_widgets/body.dart';
 
 class NextDayDetailsView extends StatelessWidget {
@@ -15,7 +14,6 @@ class NextDayDetailsView extends StatelessWidget {
       backgroundColor: Colors.black87,
       appBar: AppBar(
         backgroundColor: Colors.black87,
-        brightness: Brightness.dark,
         leading: IconButton(
             onPressed: () {
               Navigator.pop(context);

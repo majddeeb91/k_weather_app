@@ -3,12 +3,12 @@ import 'package:k_weather_app/domain/entities/weather_details_entities/daily_dat
 import 'package:k_weather_app/presentation/screens/shared_widgets/weather_condition_item.dart';
 
 class NextDayWeahterConditionds extends StatelessWidget {
+  final DailyData currentNextDayDetails;
+
   const NextDayWeahterConditionds({
     Key? key,
     required this.currentNextDayDetails,
   }) : super(key: key);
-
-  final DailyData currentNextDayDetails;
 
   @override
   Widget build(BuildContext context) {
