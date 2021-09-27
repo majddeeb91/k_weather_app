@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:k_weather_app/domain/entities/weather_details_entities/hourly_data.dart';
+import 'package:k_weather_app/core/app_appearance/app_colors.dart';
 import 'package:k_weather_app/presentation/utils/helper.dart';
 
 class HourlyHorizontalListView extends StatelessWidget {
@@ -32,12 +33,12 @@ class HourlyHorizontalListView extends StatelessWidget {
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [Colors.white24, Colors.grey],
+                  colors: [AppColors.kBlackColor, AppColors.kWhiteColor],
                 ),
               ),
               child: Column(
                 children: [
-                  Text(currentHourlyData.time, style: TextStyle(color: Colors.grey)),
+                  Text(currentHourlyData.time, style: TextStyle(color: AppColors.kGreyColor)),
                   SizedBox(height: 6),
                   SizedBox(height: 30, width: 30, child: Image.network(iconUrl)),
                   SizedBox(height: 6),

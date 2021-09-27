@@ -7,6 +7,5 @@ enum ProviderState {
 
 enum AppEnvironment {
   staging,
-
   production,
 }

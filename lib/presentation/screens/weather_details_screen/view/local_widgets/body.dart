@@ -21,7 +21,7 @@ class Body extends StatelessWidget {
 
     return SafeArea(
       child: Container(
-        color: Colors.black87,
+        margin: const EdgeInsets.only(top: 20.0),
         padding: const EdgeInsets.symmetric(horizontal: 5.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,

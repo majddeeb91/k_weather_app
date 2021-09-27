@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:k_weather_app/domain/entities/weather_details_entities/current_day_weather.dart';
+import 'package:k_weather_app/core/app_appearance/app_colors.dart';
 import 'package:k_weather_app/presentation/utils/helper.dart';
 
 class Header extends StatelessWidget {
@@ -22,23 +23,23 @@ class Header extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(40),
         boxShadow: [
-          BoxShadow(color: Colors.white, blurRadius: 30.0),
+          BoxShadow(color: Colors.black, blurRadius: 30.0),
         ],
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [Colors.grey, Colors.white24],
+          colors: [AppColors.kGreyColor, AppColors.kBlackColor],
         ),
       ),
       child: Column(
         children: [
           Text(
             "$cityName",
-            style: Theme.of(context).textTheme.headline5!.copyWith(color: Colors.black, fontWeight: FontWeight.bold),
+            style: Theme.of(context).textTheme.headline5!.copyWith(color: AppColors.kPrimaryTextColor, fontWeight: FontWeight.bold),
           ),
-          Text("${currentDayWeather.description}", style: TextStyle(fontSize: 18, color: Colors.black)),
+          Text("${currentDayWeather.description}", style: TextStyle(fontSize: 18, color: AppColors.kPrimaryTextColor)),
           SizedBox(child: Image.network(weatherIconUrl)),
-          Text("${currentDayWeather.temp}°", style: TextStyle(fontSize: 70, color: Colors.black, fontWeight: FontWeight.w400, height: 1)),
+          Text("${currentDayWeather.temp}°", style: TextStyle(fontSize: 70, color: AppColors.kPrimaryTextColor, fontWeight: FontWeight.w400, height: 1)),
         ],
       ),
     );

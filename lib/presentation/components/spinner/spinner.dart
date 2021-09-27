@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:k_weather_app/core/app_appearance/app_colors.dart';
 
 class Spinner extends StatelessWidget {
   @override
@@ -8,7 +9,7 @@ class Spinner extends StatelessWidget {
         padding: const EdgeInsets.all(0),
         child: CircularProgressIndicator(
             valueColor: AlwaysStoppedAnimation<Color>(
-          Colors.white,
+          AppColors.kPrimaryColor,
         )),
       ),
     );
