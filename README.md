@@ -1,16 +1,17 @@
 # k_weather_app
 
-A new Flutter project.
+- The application is following Clean Architecture & MVVM design patterns (please check below image).
+- The application is  using Provider as a state management approach.
+- The application is showing the 8 days weather data for current city based on current location coordinates.
+- After cloning the app from github please install packages in (pubspec.yaml) file.
 
-## Getting Started
+<br />
 
-This project is a starting point for a Flutter application.
+<h3 align="center">App Architecture</h3>
 
-A few resources to get you started if this is your first Flutter project:
+<br />
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<img src="./clean-architecture-pattern.png" style="display: block; margin-left: auto; margin-right: auto; width: 75%;"/>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<br />
+<br />
